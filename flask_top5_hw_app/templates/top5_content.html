@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+ <!-- the percent signs are template statements and tell html to communicate with python -->
+    <h1> My Top Five Musical Artists</h1>
+    {% for name in list_names %}
+     <ol>
+       <h3>{{ name }}</h3>
+     </ol>  
+     
+    
+    {% endfor %}
+
+{% endblock content %}
